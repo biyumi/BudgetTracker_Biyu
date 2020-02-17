@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Categories" representedClassName="Categories" syncable="YES" codeGenerationType="class">
+        <attribute name="category_id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="category_limit" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="category_name" optional="YES" attributeType="String"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Transactions" inverseName="categories" inverseEntity="Transactions"/>
+    </entity>
+    <entity name="Transactions" representedClassName="Transactions" syncable="YES" codeGenerationType="class">
+        <attribute name="category_id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="transaction_amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="transaction_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="transaction_description" optional="YES" attributeType="String"/>
+        <attribute name="transaction_id" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="categories" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Categories" inverseName="transactions" inverseEntity="Categories"/>
+    </entity>
+    <elements>
+        <element name="Categories" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Transactions" positionX="-54" positionY="18" width="128" height="133"/>
+    </elements>
+</model>
