@@ -127,9 +127,17 @@ class BucketModel:bucketDelegate, bucketModelDelegate{
     }
     
     func removeBucket(bucket: String) -> Bool{
+        var budget:Double = 0
         for (index, b) in self.buckets.enumerated() {
             if (b.name == bucket){
+                budget = self.buckets[index].budget
                 self.buckets.remove(at: index)
+            }
+        }
+        
+        for (index, b) in self.buckets.enumerated() {
+            if (b.name == "other"){
+                self.buckets[index].budget += budget
             }
         }
         return saveData()
