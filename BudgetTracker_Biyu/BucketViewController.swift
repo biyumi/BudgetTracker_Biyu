@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreData
 
 protocol bucketModelDelegate {
     func FetchBucketData(name: String) -> Bucket
@@ -28,9 +27,7 @@ class BucketViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let cellReuseIdentifier = "cell"
     let defaultBucketName  = "other"
     let defaultDeleteAll = "Delete all transactions"
-    
-    var managedObjectContext: NSManagedObjectContext? = nil
-    
+        
     var delegate: bucketModelDelegate?
     
     var bucketName = ""

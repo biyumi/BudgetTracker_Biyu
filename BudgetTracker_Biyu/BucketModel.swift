@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CoreData
 import UIKit
 
 struct Transaction: Codable{
