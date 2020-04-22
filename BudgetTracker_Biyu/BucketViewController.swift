@@ -2,7 +2,7 @@
 //  BucketViewController.swift
 //  BudgetTracker_Biyu
 //
-//  Created by Zehao Zhang on 4/4/20.
+//  Created by Biyu Mi on 4/4/20.
 //  Copyright © 2020 Biyu Mi. All rights reserved.
 //
 

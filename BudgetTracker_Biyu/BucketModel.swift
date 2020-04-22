@@ -2,7 +2,7 @@
 //  BucketModel.swift
 //  BudgetTracker_Biyu
 //
-//  Created by Zehao Zhang on 2/15/20.
+//  Created by Biyu Mi on 2/15/20.
 //  Copyright © 2020 Biyu Mi. All rights reserved.
 //
 
